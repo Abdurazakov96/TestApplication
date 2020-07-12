@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+protocol MainViewConfiguratorProtocol: class {
+    func configure(with view: MainViewTableViewController)
+}
+
+class MainViewConfigurator: MainViewConfiguratorProtocol {
+    
+    func configure(with viewController: MainViewTableViewController) {
+        let presenter = MainViewPresentor(view: viewController)
+        let interactor = MainViewInteractor(presenter: presenter)
+        let router = mainViewRouter(viewController: viewController)
+        
+        viewController.presenter = presenter
+        presenter.interactor = interactor
+        presenter.router = router
+    }
+    
+    
+
+}

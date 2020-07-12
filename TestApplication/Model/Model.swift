@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Model {
+    let title: String?
+    let description: String?
+    let data: Data?
+}
