@@ -1,0 +1,4 @@
+/* Bundle name */
+"CFBundleName" = "My Targets";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Please allow acces to take a picture for this application";

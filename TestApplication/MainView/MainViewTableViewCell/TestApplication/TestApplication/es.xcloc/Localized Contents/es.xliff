@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="TestApplication/App/en.lproj/InfoPlist.strings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.6" build-num="11E708"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>My Targets</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCameraUsageDescription" xml:space="preserve">
+        <source>Please allow acces to take a picture for this application</source>
+        <target>Разрешите доступ чтобы сделать снимок для этого приложения</target>
+        <note>Privacy - Camera Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TestApplication/App/en.lproj/Localizable.strings" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.6" build-num="11E708"/>
+    </header>
+    <body>
+      <trans-unit id="Active" xml:space="preserve">
+        <source>Active</source>
+        <target>Активные</target>
+        <note>Активные</note>
+      </trans-unit>
+      <trans-unit id="Adding a goals" xml:space="preserve">
+        <source>Adding a goals</source>
+        <target>Добавление цели</target>
+        <note>Добавление цели</note>
+      </trans-unit>
+      <trans-unit id="Camera" xml:space="preserve">
+        <source>Camera</source>
+        <target>Камера</target>
+        <note>Камера</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>Отмена</target>
+        <note>Отмена</note>
+      </trans-unit>
+      <trans-unit id="Change" xml:space="preserve">
+        <source>Change</source>
+        <target>Изменить</target>
+        <note>Изменить</note>
+      </trans-unit>
+      <trans-unit id="Choose a photo" xml:space="preserve">
+        <source>Choose a photo</source>
+        <target>Выбрать фотографию</target>
+        <note>Выбрать фотографию</note>
+      </trans-unit>
+      <trans-unit id="Completed" xml:space="preserve">
+        <source>Completed</source>
+        <target>Выполненные</target>
+        <note>Выполненные</note>
+      </trans-unit>
+      <trans-unit id="Delete" xml:space="preserve">
+        <source>Delete</source>
+        <target>Удалить</target>
+        <note>Удалить</note>
+      </trans-unit>
+      <trans-unit id="Done" xml:space="preserve">
+        <source>Done</source>
+        <target>Выполнена</target>
+        <note>Выполнена
+   Готово</note>
+      </trans-unit>
+      <trans-unit id="Enter goal description" xml:space="preserve">
+        <source>Enter goal description</source>
+        <target>Введите описание цели</target>
+        <note>Введите описание цели</note>
+      </trans-unit>
+      <trans-unit id="Enter goal name" xml:space="preserve">
+        <source>Enter goal name</source>
+        <target>Введите название цели</target>
+        <note>Введите название цели</note>
+      </trans-unit>
+      <trans-unit id="Goals" xml:space="preserve">
+        <source>Goals</source>
+        <target>Цели</target>
+        <note>Цели</note>
+      </trans-unit>
+      <trans-unit id="Library" xml:space="preserve">
+        <source>Library</source>
+        <target>Библиотека</target>
+        <note>Библиотека</note>
+      </trans-unit>
+      <trans-unit id="Not done" xml:space="preserve">
+        <source>Not done</source>
+        <target>Не выполнена</target>
+        <note>Не выполнена</note>
+      </trans-unit>
+      <trans-unit id="Please select an action" xml:space="preserve">
+        <source>Please select an action</source>
+        <target>Пожалуйста выберите действие</target>
+        <note>Пожалуйста выберите действие</note>
+      </trans-unit>
+      <trans-unit id="Unfulfilled" xml:space="preserve">
+        <source>Unfulfilled</source>
+        <target>Невыполненные</target>
+        <note>Невыполненные</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TestApplication/Storyboard/Base.lproj/Main.storyboard" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.6" build-num="11E708"/>
+    </header>
+    <body>
+      <trans-unit id="4UN-4I-aFT.title" xml:space="preserve">
+        <source>Completed</source>
+        <target>Completed</target>
+        <note>Class = "UITabBarItem"; title = "Completed"; ObjectID = "4UN-4I-aFT";</note>
+      </trans-unit>
+      <trans-unit id="9Sa-nT-Ihb.title" xml:space="preserve">
+        <source>Готово</source>
+        <target>Готово</target>
+        <note>Class = "UIBarButtonItem"; title = "Готово"; ObjectID = "9Sa-nT-Ihb";</note>
+      </trans-unit>
+      <trans-unit id="EdW-5B-sy5.title" xml:space="preserve">
+        <source>Active</source>
+        <target>Active</target>
+        <note>Class = "UITabBarItem"; title = "Active"; ObjectID = "EdW-5B-sy5";</note>
+      </trans-unit>
+      <trans-unit id="JY8-AT-Le3.title" xml:space="preserve">
+        <source>Добавление цели</source>
+        <target>Добавление цели</target>
+        <note>Class = "UINavigationItem"; title = "Добавление цели"; ObjectID = "JY8-AT-Le3";</note>
+      </trans-unit>
+      <trans-unit id="OOx-fM-wHu.placeholder" xml:space="preserve">
+        <source>Enter target name</source>
+        <target>Enter target name</target>
+        <note>Class = "UITextField"; placeholder = "Enter target name"; ObjectID = "OOx-fM-wHu";</note>
+      </trans-unit>
+      <trans-unit id="QmK-H8-xqJ.title" xml:space="preserve">
+        <source>Unfulfilled</source>
+        <target>Unfulfilled</target>
+        <note>Class = "UITabBarItem"; title = "Unfulfilled"; ObjectID = "QmK-H8-xqJ";</note>
+      </trans-unit>
+      <trans-unit id="RKa-p1-2l4.text" xml:space="preserve">
+        <source>Введите описание цели</source>
+        <target>Введите описание цели</target>
+        <note>Class = "UITextView"; text = "Введите описание цели"; ObjectID = "RKa-p1-2l4";</note>
+      </trans-unit>
+      <trans-unit id="b7H-6e-9jo.title" xml:space="preserve">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Class = "UINavigationItem"; title = "Title"; ObjectID = "b7H-6e-9jo";</note>
+      </trans-unit>
+      <trans-unit id="bS7-eW-VFl.title" xml:space="preserve">
+        <source>Target</source>
+        <target>Target</target>
+        <note>Class = "UINavigationItem"; title = "Target"; ObjectID = "bS7-eW-VFl";</note>
+      </trans-unit>
+      <trans-unit id="f8b-OK-ajc.text" xml:space="preserve">
+        <source>Название</source>
+        <target>Название</target>
+        <note>Class = "UILabel"; text = "Название"; ObjectID = "f8b-OK-ajc";</note>
+      </trans-unit>
+      <trans-unit id="gl7-uC-taI.text" xml:space="preserve">
+        <source>Описание</source>
+        <target>Описание</target>
+        <note>Class = "UILabel"; text = "Описание"; ObjectID = "gl7-uC-taI";</note>
+      </trans-unit>
+      <trans-unit id="kV1-rj-wfp.text" xml:space="preserve">
+        <source>Description</source>
+        <target>Description</target>
+        <note>Class = "UILabel"; text = "Description"; ObjectID = "kV1-rj-wfp";</note>
+      </trans-unit>
+      <trans-unit id="mN4-Gg-noi.title" xml:space="preserve">
+        <source>Change</source>
+        <target>Change</target>
+        <note>Class = "UIBarButtonItem"; title = "Change"; ObjectID = "mN4-Gg-noi";</note>
+      </trans-unit>
+      <trans-unit id="xgZ-DE-o4c.text" xml:space="preserve">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "xgZ-DE-o4c";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
