@@ -10,22 +10,23 @@ import Foundation
 
 protocol AddItemViewConfiguratorProtocol: class {
     
-            // MARK: - Public method
+    // MARK: - Public method
     
-    func configure(with view: AddItemViewViewController)
+    func configure(with viewController: AddItemViewViewController, MainViewTCprotocol: AddItemVCProtocol)
 }
 
 class AddItemViewConfigurator: AddItemViewConfiguratorProtocol {
     
-            // MARK: - Public method
+    // MARK: - Public method
     
-    func configure(with viewController: AddItemViewViewController) {
+    func configure(with viewController: AddItemViewViewController, MainViewTCprotocol: AddItemVCProtocol) {
         let presenter = AddItemViewPresenter(view: viewController)
         let interactor = AddItemViewInteractor(presenter: presenter)
-        let router = AddItemViewRouter(viewController: viewController)
+        let router = AddItemViewRouter(viewController: viewController, MainViewTCprotocol: MainViewTCprotocol)
         
         viewController.presenter = presenter
         presenter.interactor = interactor
         presenter.router = router
     }
+    
 }

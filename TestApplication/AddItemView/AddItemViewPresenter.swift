@@ -7,29 +7,23 @@
 //
 
 import Foundation
+import UIKit
 
 protocol AddItemViewOutputProtocol: class {
     
     // MARK: - Public method
     
-    func saveData(imageData: Data, title: String?, description: String?)
+    func saveData(imageData: Data?, title: String?, description: String?)
 }
 
 protocol AddItemViewInteractorOutputProtocol: class {
     
     // MARK: - Public method
     
-    func saveModel(model: Model)
+    func goRouter()
 }
 
 class AddItemViewPresenter: AddItemViewOutputProtocol, AddItemViewInteractorOutputProtocol  {
-    
-    // MARK: - Public property
-    
-    unowned let view: AddItemViewInputProtocol
-    var interactor: AddItemViewInteractorInputProtocol!
-    var router: AddItemViewRouterProtocol!
-    
     
     // MARK: - Init
     
@@ -38,17 +32,24 @@ class AddItemViewPresenter: AddItemViewOutputProtocol, AddItemViewInteractorOutp
     }
     
     
+    // MARK: - Protocols
+    
+    let view: AddItemViewInputProtocol
+    var interactor: AddItemViewInteractorInputProtocol!
+    var router: AddItemViewRouterProtocol!
+    
+    
     // MARK: - Public methods
     
-    func saveModel(model: Model) {
-        router.openMainViewTableVC(model: model)
+    func goRouter() {
+        router.openMainViewTableVC()
     }
     
-    func saveData(imageData: Data, title: String?, description: String?) {
+    func saveData(imageData: Data?, title: String?, description: String?) {
         if title != "" && description != "" {
             interactor.createModel(imageData: imageData, title: title!, description: description!)
         } else {
-            view.activateAlert()
+            view.showAlert()
         }
         
     }

@@ -1,0 +1,57 @@
+/* Активные */
+"Active" = "Activo";
+
+/* Добавление цели */
+"Adding a goals" = "Agregar un objetivo";
+
+/* Камера */
+"Camera" = "Cámara";
+
+/* Отмена */
+"Cancel" = "Cancelación";
+
+/* Изменить */
+"Change" = "Editar";
+
+/* Выбрать фотографию */
+"Choose a photo" = "Seleccione Foto";
+
+/* Выполненные */
+"Completed" = "Terminado";
+
+/* Удалить */
+"Delete" = "Eliminar";
+
+/* Выполнена
+   Выполнена цель в таблице
+   Готово */
+"Done" = "Terminado";
+
+/* Введите описание цели */
+"Enter goal description" = "Ingrese la descripción del objetivo";
+
+/* Введите название цели */
+"Enter goal name" = "Ingrese el nombre del objetivo";
+
+/* Цели */
+"Goals" = "Objetivos";
+
+/* Библиотека */
+"Library" = "Biblioteca";
+
+/* Отсутствуют данные для статистики */
+"Missing data for statistics" = "Faltan datos para estadísticas";
+
+/* Не выполнена */
+"Not done" = "Sin ejecutar";
+
+/* Пожалуйста выберите действие */
+"Please select an action" = "Seleccione una acción";
+
+/* Невыполненные
+   Статистика */
+"Statistics" = "Estadísticas";
+
+/* Невыполненные */
+"Unfulfilled" = "Incumplido";
+

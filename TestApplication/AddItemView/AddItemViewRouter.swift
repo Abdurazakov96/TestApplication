@@ -10,37 +10,32 @@ import Foundation
 
 protocol AddItemViewRouterProtocol {
     
-    // MARK: - Init
-    
-    init(viewController: AddItemViewViewController)
-    
     // MARK: - Public method
     
-    func openMainViewTableVC(model: Model)
+    func openMainViewTableVC()
 }
 
 class AddItemViewRouter: AddItemViewRouterProtocol {
     
-    // MARK: - Public property
-    
-    unowned let viewController: AddItemViewViewController
-    
-    
     // MARK: - Init
     
-    required init(viewController: AddItemViewViewController) {
+    required init(viewController: AddItemViewViewController, MainViewTCprotocol: AddItemVCProtocol) {
         self.viewController = viewController
+        self.MVTpresenter = MainViewTCprotocol
     }
+    
+    
+    // MARK: - Public properties
+    
+    let viewController: AddItemViewViewController
+    let MVTpresenter: AddItemVCProtocol
     
     
     // MARK: - Public method
     
-    func openMainViewTableVC(model: Model) {
-        viewController.performSegue(withIdentifier: "", sender: model)
-    }
-    
-    func openAddItemViewController() {
-        viewController.performSegue(withIdentifier: "AddItemVC", sender: nil)
+    func openMainViewTableVC() {
+        viewController.navigationController?.popViewController(animated: true)
+        MVTpresenter.refreshTableView()
     }
     
 }

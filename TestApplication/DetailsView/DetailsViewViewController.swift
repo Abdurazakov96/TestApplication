@@ -12,48 +12,51 @@ protocol DetailsViewInputProtocol: class {
     
     // MARK: - Public methods
     
-    func displayTaskTitle(with title: String)
-    func displayTaskDescription(with description: String)
+    func displayObjectTitle(with title: String)
+    func displayObjectDescription(with description: String)
+    func displayObjectImage(with image: Data?)
 }
 
 class DetailsViewViewController: UIViewController {
+    
+    // MARK: - Protocols
+    
+    var presenter: DetailsViewOutputProtocol!
+    let configurator: DetailsViewConfiguratorProtocol =  DetailsViewConfugurator()
+    
     
     // MARK: - IBoutlets
     
     @IBOutlet var image: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
-    
-    
-    // MARK: - Public properties
-    
-    var presenter: DetailsViewPresenter!
-    let configurator: DetailsViewConfiguratorProtocol =  DetailsViewConfugurator()
+    @IBOutlet var navigationTitle: UINavigationItem!
     
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        configurator.configure(with: self, task: Model(title: "dd", description: "aa", data: UIImage(named: "Swift.jpg")?.pngData()))
         presenter.showDetails()
+        navigationTitle.title = titleLabel.text
     }
-        
+    
 }
 
 extension DetailsViewViewController: DetailsViewInputProtocol {
     
-        // MARK: - Public properties
+    // MARK: - Public methods
     
-    //    func displayTaskImage(with imageData: Data?) {
-    //        image.image = UIImage(data: imageData!)
-    //    }
+    func displayObjectImage(with image: Data?) {
+        self.image.image = UIImage(data: image!)
+    }
+
     
-    func displayTaskTitle(with title: String) {
+    func displayObjectTitle(with title: String) {
         titleLabel.text = title
     }
     
-    func displayTaskDescription(with description: String) {
+    func displayObjectDescription(with description: String) {
         descriptionLabel.text = description
     }
     

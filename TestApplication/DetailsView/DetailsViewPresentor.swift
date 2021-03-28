@@ -11,11 +11,6 @@ import Foundation
 
 protocol DetailsViewOutputProtocol: class {
     
-    // MARK: - Init
-    
-    init(view: DetailsViewInputProtocol)
-    
-    
     // MARK: - Public method
     
     func showDetails()
@@ -25,16 +20,10 @@ protocol DetailsViewInteractorOutputProtocol: class {
     
     // MARK: - Public method
     
-    func receiveTaskDetails(task: Model)
+    func receiveTaskDetails(title: String, description: String, image: Data)
 }
 
 class DetailsViewPresenter: DetailsViewOutputProtocol, DetailsViewInteractorOutputProtocol  {
-    
-    // MARK: - Public properties
-    
-    unowned let view: DetailsViewInputProtocol!
-    var interactor: DetailsViewInteractorInputProtocol!
-    
     
     // MARK: - Init
     
@@ -43,16 +32,23 @@ class DetailsViewPresenter: DetailsViewOutputProtocol, DetailsViewInteractorOutp
     }
     
     
-    // MARK: - Public method
+    // MARK: - protocols
     
-    func receiveTaskDetails(task: Model) {
-        view.displayTaskTitle(with: task.title!)
-        view.displayTaskDescription(with: task.description!)
-        //        view.displayTaskImage(with: task.data)
+    let view: DetailsViewInputProtocol!
+    var interactor: DetailsViewInteractorInputProtocol!
+    
+    
+    // MARK: - Public methods
+    
+    func receiveTaskDetails(title: String, description: String, image: Data) {
+        view.displayObjectTitle(with: title)
+        view.displayObjectDescription(with: description)
+        view.displayObjectImage(with: image)
     }
     
     func showDetails() {
         interactor.provideCourseDetails()
+        
     }
     
 }

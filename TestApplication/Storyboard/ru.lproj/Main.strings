@@ -1,0 +1,45 @@
+/* Class = "UITabBarItem"; title = "Completed"; ObjectID = "4UN-4I-aFT"; */
+"4UN-4I-aFT.title" = "Completed";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "b7H-6e-9jo"; */
+"b7H-6e-9jo.title" = "Title";
+
+/* Class = "UINavigationItem"; title = "Target"; ObjectID = "bS7-eW-VFl"; */
+"bS7-eW-VFl.title" = "Target";
+
+/* Class = "UITabBarItem"; title = "Active"; ObjectID = "EdW-5B-sy5"; */
+"EdW-5B-sy5.title" = "Активные";
+
+/* Class = "UILabel"; text = "Название"; ObjectID = "f8b-OK-ajc"; */
+"f8b-OK-ajc.text" = "Название";
+
+/* Class = "UILabel"; text = "Описание"; ObjectID = "gl7-uC-taI"; */
+"gl7-uC-taI.text" = "Описание";
+
+/* Class = "UINavigationItem"; title = "Добавление цели"; ObjectID = "JY8-AT-Le3"; */
+"JY8-AT-Le3.title" = "Добавление цели";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "kV1-rj-wfp"; */
+"kV1-rj-wfp.text" = "Description";
+
+/* Class = "UIBarButtonItem"; title = "Change"; ObjectID = "mN4-Gg-noi"; */
+"mN4-Gg-noi.title" = "Change";
+
+/* Class = "UITextField"; placeholder = "Enter target name"; ObjectID = "OOx-fM-wHu"; */
+"OOx-fM-wHu.placeholder" = "Enter target name";
+
+/* Class = "UITabBarItem"; title = "Statistics"; ObjectID = "p3l-VP-3wD"; */
+"p3l-VP-3wD.title" = "Статистика";
+
+/* Class = "UITabBarItem"; title = "Unfulfilled"; ObjectID = "QmK-H8-xqJ"; */
+"QmK-H8-xqJ.title" = "Невыполненные";
+
+/* Class = "UITextView"; text = "Введите описание цели"; ObjectID = "RKa-p1-2l4"; */
+"RKa-p1-2l4.text" = "Введите описание цели";
+
+/* Class = "UINavigationItem"; title = "Статистика"; ObjectID = "s1d-dW-KXJ"; */
+"s1d-dW-KXJ.title" = "Статистика";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "xgZ-DE-o4c"; */
+"xgZ-DE-o4c.text" = "Title";
+

@@ -7,13 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
 
 protocol DetailsViewInteractorInputProtocol: class {
-    
-    // MARK: - Init
-    
-    init(presenter: DetailsViewPresenter, task: Model)
-    
     
     // MARK: - Public method
     
@@ -22,28 +18,35 @@ protocol DetailsViewInteractorInputProtocol: class {
 
 class DetailsViewInteractor: DetailsViewInteractorInputProtocol {
     
-    // MARK: - Public property
+    // MARK: - Protocols
     
-    unowned let presenter: DetailsViewInteractorOutputProtocol
-    
-    
-    // MARK: - Private property
-    
-    private let task: Model
+    let presenter: DetailsViewInteractorOutputProtocol
     
     
     // MARK: - Init
     
-    required init(presenter: DetailsViewPresenter, task: Model) {
+    required init(presenter: DetailsViewPresenter, indexPath: IndexPath) {
         self.presenter = presenter
-        self.task = task
+        self.indexPath = indexPath
+        let realm = try! Realm()
+        modelList = realm.objects(Model.self)
     }
+    
+    
+    // MARK: - Public properties
+    
+    var modelList: Results<Model>!
+    
+    
+    // MARK: - Private property
+    
+    private let indexPath: IndexPath
     
     
     // MARK: - Public method
     
     func provideCourseDetails() {
-        presenter.receiveTaskDetails(task: task)
+        presenter.receiveTaskDetails(title: modelList[indexPath.row].title!, description: modelList[indexPath.row].descriptionForTitle!, image: modelList[indexPath.row].image!)
     }
     
 }

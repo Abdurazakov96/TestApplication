@@ -6,10 +6,16 @@
 //  Copyright © 2020 Магомед Абдуразаков. All rights reserved.
 //
 
-import Foundation
 
-struct Model {
-    let title: String?
-    let description: String?
-    let data: Data?
+import Foundation
+import RealmSwift
+
+class Model: Object {
+    
+    // MARK: - Public Properties
+    
+    @objc dynamic var title: String?
+    @objc dynamic var descriptionForTitle: String?
+    @objc dynamic var image: Data?
+    @objc dynamic var statusModel: String?
 }

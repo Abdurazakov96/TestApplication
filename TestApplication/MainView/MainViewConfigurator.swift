@@ -9,21 +9,25 @@
 import Foundation
 
 protocol MainViewConfiguratorProtocol: class {
-    func configure(with view: MainViewTableViewController)
+    
+    // MARK: - Public method
+    
+    func configure(with view: MainViewController)
 }
 
 class MainViewConfigurator: MainViewConfiguratorProtocol {
     
-    func configure(with viewController: MainViewTableViewController) {
-        let presenter = MainViewPresentor(view: viewController)
-        let interactor = MainViewInteractor(presenter: presenter)
-        let router = mainViewRouter(viewController: viewController)
-        
-        viewController.presenter = presenter
-        presenter.interactor = interactor
-        presenter.router = router
-    }
+    // MARK: - Public method
     
+        func configure(with viewController: MainViewController) {
+            let presenter = MainViewPresenter(view: viewController)
+            let interactor = MainViewInteractor()
+            let router = mainViewRouter(viewController: viewController)
     
-
+            viewController.presenter = presenter
+            viewController.presenterForAddItemVC = presenter
+            presenter.interactor = interactor
+            presenter.router = router
+        }
+    
 }

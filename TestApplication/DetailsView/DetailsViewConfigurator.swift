@@ -10,21 +10,21 @@ import Foundation
 
 protocol DetailsViewConfiguratorProtocol: class {
     
-        // MARK: - Public method
+    // MARK: - Public method
     
-    func configure(with viewController: DetailsViewViewController, task: Model)
+    func configure(with viewController: DetailsViewViewController, indexPath: IndexPath)
 }
 
 class DetailsViewConfugurator: DetailsViewConfiguratorProtocol {
     
-        // MARK: - Public method
+    // MARK: - Public method
     
-    func configure(with viewController: DetailsViewViewController, task: Model) {
+    func configure(with viewController: DetailsViewViewController, indexPath: IndexPath) {
         let presenter = DetailsViewPresenter(view: viewController)
-        let interactor = DetailsViewInteractor(presenter: presenter, task: task)
+        let interactor = DetailsViewInteractor(presenter: presenter, indexPath: indexPath)
         
         viewController.presenter = presenter
         presenter.interactor = interactor
     }
-
+    
 }

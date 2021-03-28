@@ -9,21 +9,31 @@
 import Foundation
 
 protocol MainViewInteractorInputProtocol: class {
+    
+    // MARK: - Public method
+    
     func saveModel()
 }
 
 class MainViewInteractor: MainViewInteractorInputProtocol {
     
-        unowned let presenter: MainViewInteractorOutputProtocol
+    // MARK: - Public property
     
-        required init(presenter: MainViewInteractorOutputProtocol) {
-            self.presenter = presenter
-        }
+    unowned let presenter: MainViewInteractorOutputProtocol
+    
+    
+    // MARK: - Init
+    
+    required init(presenter: MainViewInteractorOutputProtocol) {
+        self.presenter = presenter
+    }
+    
+    
+    // MARK: - Public method
     
     func saveModel() {
         print("dsad")
     }
-    
     
 }
 
